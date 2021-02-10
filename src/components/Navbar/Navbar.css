@@ -1,0 +1,30 @@
+.navbar-container {
+    height: 80px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+    padding: 0 2rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
