@@ -1,0 +1,28 @@
+.address-form-title {
+    margin-bottom: 2.5rem;
+}
+
+.address-form-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.prev-btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+} 
+
+.next-btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color:white;
+}

@@ -96,18 +96,21 @@
     padding: 20px 40px;
     border: none;
     border-radius: 4px;
-    background-color: #ff9292;
+    background-color: var(--primary-color);
     color: #fff;
     cursor: pointer;
     outline: none;
+    font-size: 16px;
 }
 
 .buy-now-btn {
     padding: 20px 40px;
     border: none;
     border-radius: 4px;
-    background-color: #845ec2;
+    background-color: var(--secondary-color);
     color: #fff;
     cursor: pointer;
     outline: none;
+    font-size: 16px;
+
 }

@@ -1,0 +1,17 @@
+.review-items {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.review-items-container {
+    margin-bottom: 2.5rem   ;
+}
+
+.review-items p {
+    font-weight: 500;
+}
+
+.payment-hr {
+    margin-top: 10px;
+}

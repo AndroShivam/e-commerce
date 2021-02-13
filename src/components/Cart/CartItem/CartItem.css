@@ -1,0 +1,40 @@
+.item-container {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.item-info {
+    width: 100%;
+    padding: 24px;
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-quantity {
+    margin-right: 16px;
+}
+
+.item-quantity button {
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.item-quantity span {
+    margin: 0 8px;
+    font-weight: 500;
+}
+
+.cart-item-img {
+    width: 80px;
+    height: 100px;
+}
+

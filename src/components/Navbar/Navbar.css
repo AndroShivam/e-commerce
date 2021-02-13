@@ -1,5 +1,5 @@
 .navbar-container {
-    height: 80px;
+    height: 10vh;
     box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
     padding: 0 2rem;
     background-color: white;
@@ -7,6 +7,10 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+Link {
+    text-decoration: none;
 }
 
 .nav-logo {
