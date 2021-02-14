@@ -1,11 +1,11 @@
 .review-items {
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 400px;
 }
 
 .review-items-container {
-    margin-bottom: 2.5rem   ;
+    margin-bottom: 2rem   ;
 }
 
 .review-items p {
@@ -14,4 +14,10 @@
 
 .payment-hr {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .review-items {
+        width: 280px;
+    }
 }

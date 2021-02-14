@@ -20,7 +20,7 @@ const Product = ({ product, onAddToCart  }) => {
                     </div>
                 </div>
             </div>
-
+  
             <Modal 
             isOpen = {isModalOpen} 
             onRequestClose = {() => setIsModalOpen(false)} >

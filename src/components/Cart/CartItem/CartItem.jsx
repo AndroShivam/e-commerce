@@ -16,7 +16,7 @@ const CartItem = ({ item, onUpdateCartQuantity, onRemoveFromCart }) => {
                                 <span>{item.quantity}</span>
                                 <button className="btn-plus" onClick = {() => onUpdateCartQuantity(item.id, item.quantity + 1)}>+</button>
                             </div>
-                            <p>{  item.line_total.formatted_with_symbol }</p>
+                            <p className="item-info-price">{  item.line_total.formatted_with_symbol }</p>
                         </div>
                     </div>
                 </div>

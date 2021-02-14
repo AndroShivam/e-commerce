@@ -51,27 +51,22 @@ const AddressForm = ({ checkoutToken, next }) => {
 
     return (
         <>
-            <h1 className="address-form-title">Shipping Address</h1>
+            <h3 className="address-form-title">Shipping Address</h3>
             <FormProvider {...methods}>
-                <form autoComplete="off" onSubmit={methods.handleSubmit((data) => next({...data, shippingCountry, shippingSubdivison, setShippingOption}))}>
-                    <label htmlFor="fname">First Name </label>
-                    <input type="text" id="fname"/>
-                    <br/>
-                    <label htmlFor="lname">Last Name </label>
-                    <input type="text" id="lname"/>
-                    <br/>
-                    <label htmlFor="address">Address</label>
-                    <input type="text" id="address"/>
-                    <br/>
-                    <label htmlFor="email">Email</label>
-                    <input type="text" id="email"/>
-                    <br/>
-                    <label htmlFor="city">City</label>
-                    <input type="text" id="city"/>
-                    <br/>
-                    <label htmlFor="zip">Zip / Postal Code</label>
-                    <input type="number" id="zip"/>
-                    <br/>
+                <form className="address-form" autoComplete="off" onSubmit={methods.handleSubmit((data) => next({...data, shippingCountry, shippingSubdivison, setShippingOption}))}>
+                  
+                  <div className="flex-1">
+                      <input type="text" id="fname" placeholder="First Name" required/>
+                      <input type="text" id="lname" placeholder="Last Name" required/>
+                  </div>
+                  <div className="flex-2">
+                       <input type="text" id="address" placeholder="Address" required/>
+                       <input type="text" id="email" placeholder="Email" required/>
+                  </div>
+                  <div className="flex-3">
+                        <input type="text" id="city" placeholder="City" required/>
+                        <input type="number" id="zip" placeholder="Zip/Postal Code" required/>
+                  </div>
 
                     <label htmlFor="shippingcountry">Shipping Country</label>
                     <select name="shippingcountry" id="sc" value={shippingCountry} onChange={(e) => setShippingCountry(e.target.value)}>
@@ -79,7 +74,6 @@ const AddressForm = ({ checkoutToken, next }) => {
                             <option key={country.id} value={country.id}>{country.label}</option>
                         ))}
                     </select>
-                    <br/>
 
                     <label htmlFor="shippingsubdivison">Shipping Subdivision</label>
                     <select name="shippingsubdivison" id="ss" value={shippingSubdivison} onChange={(e) => setShippingSubdivison(e.target.value)}>
@@ -87,7 +81,6 @@ const AddressForm = ({ checkoutToken, next }) => {
                             <option key={subdivision.id} value={subdivision.id}>{ subdivision.label }</option>
                         ))}
                     </select>
-                    <br/>
 
                     <label htmlFor="shippingoption">Shipping Option</label>
                     <select name="shippingoption" id="so" value={shippingOption} onChange={(e) => setShippingOption(e.target.value)}>

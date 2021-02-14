@@ -54,7 +54,7 @@ const PaymentForm = ({ checkoutToken, shippingData, prevStep, nextStep, onCaptur
 
     return (
         <div className="payment">
-            <h1 className = "payment-form-title">Order Summary</h1>
+            <h3 className = "payment-form-title">Order Summary</h3>
             <Review checkoutToken = {checkoutToken}/>
 
             <hr className="payment-hr"/>

@@ -63,3 +63,22 @@
     outline: none;
     cursor: pointer;
 }
+
+
+
+@media screen and (max-width: 768px){
+    .cart-info {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+    }
+    
+    .cart-info-btn {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+}

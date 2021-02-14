@@ -7,10 +7,12 @@
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
-body {
+html, body {
     font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100%;
 }

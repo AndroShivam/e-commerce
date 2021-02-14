@@ -18,9 +18,9 @@ const Review = ({checkoutToken}) => {
                             </div>
                         ))}
 
-                        <h3 className="review-item-subtotal">
+                        <h4 className="review-item-subtotal">
                             Subtotal: <br/>{checkoutToken.live.subtotal.formatted_with_symbol}
-                        </h3>
+                        </h4>
                     </div>
                 </div>
             </>

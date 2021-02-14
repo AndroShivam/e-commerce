@@ -1,12 +1,12 @@
 .address-form-title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .address-form-btn-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .prev-btn {
@@ -25,4 +25,31 @@
     cursor: pointer;
     background-color: var(--secondary-color);
     color:white;
+}
+
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.address-form input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid grey;
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .address-form input {
+        margin-bottom: 32px;
+        font-size: 1.2rem;
+    }
+
+    select {
+        width: auto;
+    }
 }

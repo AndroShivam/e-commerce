@@ -1,7 +1,6 @@
 .checkout-card {
     display: flex;
     justify-content: center;
-    align-self: center;
     align-items: center;
     height: 90vh;
 }
@@ -11,5 +10,50 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 2.5rem;
+    padding: 2rem;
+}
+
+.flex-1, .flex-2, .flex-3{
+    margin-bottom: 8px;
+}
+
+.flex-1 #fname, .flex-2 #address, .flex-3 #city  {
+    margin-right: 16px;
+}
+
+
+.address-form #sc, #ss, #so {
+    padding: 12px;
+}
+
+.address-form label {
+    color: grey;
+    margin: 8px 0;
+}
+
+@media screen and (max-width: 768px){
+    .flex-1, .flex-2, .flex-3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .flex-1, .flex-2, .flex-3{
+        margin-bottom: 0px;
+    }
+    
+    .flex-1 #fname, .flex-2 #address, .flex-3 #city  {
+        margin-right: 0px;
+    }
+    
+    
+    .address-form #sc, #ss, #so {
+        padding: 2px;
+    }
+    
+    .address-form label {
+        color: grey;
+        margin: 8px 0;
+    }
+
 }

@@ -11,7 +11,7 @@ const Cart = ({ cart, handleUpdateCartQuantity, handleRemoveFromCart, handleEmpt
             <h1 className="loading-txt">Loading....</h1>
         </div>
     }
-
+ 
     const EmptyCart = () => {
         return (
             <div className="empty-cart-container">
