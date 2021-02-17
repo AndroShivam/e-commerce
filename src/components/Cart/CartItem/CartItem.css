@@ -38,6 +38,15 @@
     height: 100px;
 }
 
+.item-remove-btn {
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px){
     .item-container {
         padding: 0px;
@@ -90,5 +99,14 @@
     
     .item-info-price {
         margin-top: 4px;
+    }
+
+    .item-remove-btn {
+        padding: 6px 12px;
+        border: none;
+        outline: none;
+        background-color: var(--primary-color);
+        color: white;
+        cursor: pointer;
     }
 }

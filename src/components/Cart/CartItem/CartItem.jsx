@@ -19,6 +19,7 @@ const CartItem = ({ item, onUpdateCartQuantity, onRemoveFromCart }) => {
                             <p className="item-info-price">{  item.line_total.formatted_with_symbol }</p>
                         </div>
                     </div>
+                    <button className="item-remove-btn" onClick={() => onRemoveFromCart(item.id)}>Remove</button>
                 </div>
                 <hr/>
             </div>
